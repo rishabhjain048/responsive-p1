@@ -1,0 +1,173 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.cursor{
+    height: 2vw;
+    width: 2vw;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* .main{
+    height: 100%;
+    width: 100%;
+} */
+
+.nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    text-transform: uppercase;
+    border-bottom: 2px solid #dadada;
+}
+.nav h2{
+    font-size: 3vw;
+
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   gap: 2vw;
+    
+}
+.nav2 h1{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.nav2 i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+.nav2 button{
+    font-size: 1.2vw;
+    padding: 0.3vw 1.5vw;
+    border-radius: 2vw;
+    background-color: #33B6A5;
+    color: #fff;
+}
+.content{
+    height: calc(100% - 10vh);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 5vw 5vw;
+}
+.left h1{
+    font-size: 3vw;
+    line-height: 4.4vw;
+    
+}
+.left h1 span{
+    font-size: 3.8vw;
+    color: #33B6A5;
+    text-transform: uppercase;
+}
+.left p{
+    font-size: 1.4vw;
+    padding: 3vw 0;
+    width: 80%;
+}
+.left button{
+    font-size: 1.2vw;
+    padding: 1vw 2.3vw;
+    border-radius: 2vw;
+    background-color:#33B6A5;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 5vw;
+        height: 10vw;
+
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav2 h1{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav2 i{
+        display: block;
+        font-size: 6vw;
+    }
+    .nav2 button{
+        display: none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+        padding: 4vw 0;
+    }
+    .left{
+        width: 100%;
+        height: 60%;
+
+         }
+    .left h1{
+        font-size: 10vw;
+        line-height: 13vw;
+    }
+    .left h1 span{
+        font-size: 12vw;
+    }
+    .left p{
+        font-size: 5vw;
+        word-spacing: 1vw;
+        width: 100%;
+        padding: 4vw 0;
+    }
+    .left button{
+        font-size: 4vw;
+        padding: 3vw 6vw;
+        border-radius: 10px;
+    }
+    .right{
+        width: 100%;
+        height: 40%;
+    }
+    .right img{
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
